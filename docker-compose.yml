@@ -1,0 +1,48 @@
+version: "3.9"
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    ports:
+      - 3310:3306
+    expose:
+      - 3310
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+
+  ms-users:
+    build: ./microservices/ms-users
+    links:
+      - db
+    ports:
+      - 5001:5000
+
+  ms-workout:
+    build: ./microservices/ms-workout
+    links:
+      - db
+    ports:
+      - 5002:5000
+
+  client:
+    build: ./client/my-docker-app
+    links:
+      - ms-users
+    ports:
+      - 5000:3000
+
+volumes:
+  db-data:

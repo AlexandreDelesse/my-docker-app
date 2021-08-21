@@ -1,0 +1,15 @@
+FROM node:12.4
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+COPY . .
+
+EXPOSE 5001:5000
+
+CMD ["node", "server.js"]
+
+
+

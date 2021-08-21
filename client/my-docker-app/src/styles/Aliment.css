@@ -1,0 +1,300 @@
+.nutrition {
+    display: flex;    
+}
+.menuSelection{
+    padding: 20px;
+    width: 300px;
+}
+.ingredientVue{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.listeSelection {
+    border: 2px solid #f1f1f1;
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.listeSelection input {
+    width: 40px;
+}
+
+.recipeMacro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.recipeMacro span {
+    font-size: large;
+    font-weight: bold;
+}
+.selectionButton {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectionButton button{
+    width: 100%;
+    background-color: #333;
+    font-weight: bold;
+    color: #f1f1f1;
+    border-style: none;
+    border: 2px solid #f1f1f1;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+.selectionButton button:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.alimentListe {
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    max-height: 900px;
+    border-right: 2px solid #f1f1f1;
+    overflow: scroll;
+}
+.alimentListe::-webkit-scrollbar {
+    display: none;
+}
+
+.recetteListe {
+    padding: 20px;
+    text-align: center;
+    min-width: 400px;
+    border-left: 1px solid #f1f1f1;
+}
+
+.ajouterAliment{
+    width: 300px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #f1f1f1;
+}
+
+.ajouterAliment input {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #f1f1f1;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.inputSelection {
+    width: 30px;
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #f1f1f1;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ajouterAliment input:focus {
+    outline-style: none;
+}
+
+.errorAlert {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #842029;
+    border-color: #f5c2c7;
+    border-radius: 10px;
+}
+
+.ajouterAlimentButton{
+    background-color: #333;
+    font-weight: bold;
+    color: #f1f1f1;
+    border-style: none;
+    border: 2px solid #f1f1f1;
+    padding: 10px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+    
+}
+.ajouterAliment button:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.alimentCardsContainer{
+    padding: 0;
+    margin: 20px;
+}
+.alimentCard {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transition: transform 2s ease-in-out;
+}
+
+.alimentContent {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f1f1f1;
+    background-color: #333;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+.alimentContent input{
+    font-size: large;
+    color: #f1f1f1;
+    width: 40px;
+    background-color: #333;
+}
+.alimentContent input[type=text]{
+    width: auto;
+}
+
+.alimentContentClicked {
+    background-color: #555;
+    transform: translate(10px, -10px)
+}
+
+.buttonCardContainer{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.buttonDelete{
+    margin-left: 10px;
+    width: 25px;
+    transition: transform 0.25s ease-out;
+}
+.buttonDelete:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.buttonModify{
+    margin-left: 10px;
+    width: 25px;
+    transition: transform 0.25s ease-out;
+}
+.buttonModify:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.alimentContent h2 {
+    text-align: center;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 20px;
+}
+
+.alimentContent p {
+    margin: 20px 0;
+}
+
+.alimentContent span {
+    font-size: medium;
+    font-weight: bold;
+}
+.alimentContent:hover {
+    background-color: #555;
+}
+
+.alimentBackContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #f1f1f1;
+    top: 0;
+    z-index: -1;
+}
+
+.alertDelete {
+    text-align: center;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.alertDelete button {
+    margin: 20px 20px 10px 10px;
+    padding: 5px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-style: none;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    
+}
+
+.alertDelete button:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #f1f1f1;
+    color: #555;
+}
+
+.slideIn{
+    animation: slideEffect 0.5s ease-in-out;
+}
+
+.slideIn-1 {
+    animation: slideEffect2 0.5s ease-in-out ;
+}
+
+.slideIn-2 {
+    animation: slideEffect 0.5s ease-in-out 2s;
+}
+
+.slide-right{
+    animation: slideRight 0.5s ease-in-out;
+}
+
+@keyframes slideEffect{
+    from{
+        opacity: 0;
+        transform: translate(0,-20px);
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes slideEffect2{
+    from{
+        opacity: 0;
+        transform: translate(0,-20px);
+    }
+    50%{
+        opacity: 0;
+        transform: translate(0,-20px);
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity: 0;
+        transform: translate(-20px,0);
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0,0);
+    }
+}

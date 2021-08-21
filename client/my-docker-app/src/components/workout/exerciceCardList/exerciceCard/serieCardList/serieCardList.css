@@ -1,0 +1,9 @@
+.serieCardListContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.serieCardListContainer::-webkit-scrollbar {
+  display: none;
+}

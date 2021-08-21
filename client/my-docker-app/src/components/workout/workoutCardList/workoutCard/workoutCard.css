@@ -1,0 +1,19 @@
+.workoutCardContainer {
+  width: 100%;
+  height: 80px;
+  background-color: whitesmoke;
+  color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.workoutCardContent {
+}
+
+.workoutCardHeader {
+  font-weight: bold;
+}
+
+.workoutCardBody {
+}

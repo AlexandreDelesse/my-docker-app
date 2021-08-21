@@ -1,0 +1,108 @@
+.serieCardContainer,
+.serieCardButtonContainer {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  position: relative;
+  border-radius: 5% 5% 5% 5%;
+}
+
+.serieCardButtonContainer:hover {
+  cursor: pointer;
+}
+
+.serieCardCloseImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.serieCardHeader {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #555;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  width: 150px;
+}
+
+.serieCardButtonHeader {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #333;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  border: 2px dashed #f1f1f1;
+  border-bottom: none;
+  width: 150px;
+}
+
+.serieCardHeader h4 {
+  padding: 5px;
+  height: 100%;
+  font-size: medium;
+  margin: auto;
+  text-align: center;
+}
+
+.serieCardButtonTitle {
+  padding: 5px;
+  height: 100%;
+  font-size: medium;
+  margin: auto;
+  text-align: center;
+}
+
+.serieCardBody {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 0 0 5% 5%;
+  width: 150px;
+  height: 120px;
+}
+
+.serieCardButtonBody {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #f1f1f1;
+  border-radius: 0 0 5% 5%;
+  width: 150px;
+  height: 120px;
+}
+
+.serieCardButtonAdd {
+  width: 50px;
+  height: 50px;
+  fill: #f1f1f1;
+}
+
+.serieCardBodyElement {
+  display: flex;
+  justify-content: space-around;
+}
+
+.serieCardInput {
+  border: none;
+  width: 50px;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #333;
+  text-align: center;
+}
+
+.serieCardIco {
+  color: #333;
+  width: 25px;
+  height: 25px;
+}

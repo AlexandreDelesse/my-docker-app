@@ -1,0 +1,44 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+select {
+  appearance: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.dashedButton {
+  padding: 10px;
+  color: #333;
+  background-color: white;
+  border: 2px dashed #333;
+}
+
+.dashedButton:hover {
+  background-color: #333;
+  color: white;
+}
+
+.classicButton {
+  padding: 10px;
+  color: #333;
+  background-color: white;
+  border: 2px solid #333;
+}
+
+.classicButton:hover {
+  background-color: #333;
+  color: white;
+}

@@ -1,0 +1,8 @@
+.plusAddIcon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10;
+}

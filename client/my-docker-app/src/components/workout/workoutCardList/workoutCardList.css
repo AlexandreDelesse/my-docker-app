@@ -1,0 +1,16 @@
+.workoutCardListContainer {
+  position: relative;
+  height: 85vh;
+  width: 80vw;
+  margin: auto;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.workoutCardListItem {
+  margin: 5px 0 5px 0;
+  width: 100%;
+}

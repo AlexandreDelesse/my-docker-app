@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://86.198.202.75:5001/api/exercices",
+  baseURL: "https://mywebservice-cr77nbfyhq-ew.a.run.app/api/exercices",
   timeout: 1000,
 });
 

@@ -1,10 +1,10 @@
 module.exports = {
-  HOST: "db",
-  // HOST: "localhost",
-  // PORT: "3310",
+  // HOST: "db",
+  HOST: "34.77.43.129",
+  PORT: "",
   USER: "root",
   PASSWORD: "root",
-  DB: "my-docker-app",
+  DB: "mydockerapp",
   dialect: "mysql",
   pool: {
     max: 5,

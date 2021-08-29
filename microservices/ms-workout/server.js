@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./src/models");
 
-db.sequelize.sync().then(() => {
+db.sequelize.sync({alter: true}).then(() => {
   console.log("drop and re-sync db");
 });
 

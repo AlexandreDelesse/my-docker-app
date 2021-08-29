@@ -10,6 +10,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: user
       MYSQL_PASSWORD: user_password
+      MYSQL_DATABASE: mydockerdb
     ports:
       - 3310:3306
     expose:
@@ -22,13 +23,6 @@ services:
       - 8080:8080
     depends_on:
       - db
-
-  ms-users:
-    build: ./microservices/ms-users
-    links:
-      - db
-    ports:
-      - 5001:5000
 
   ms-workout:
     build: ./microservices/ms-workout
